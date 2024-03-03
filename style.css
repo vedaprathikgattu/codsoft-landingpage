@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    padding-left: 60px;
+    background-image: url(./collo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bar{
+    width: 100%;
+}
+nav{
+    display: flex;
+    background-color: orange;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.logo{
+    width: 80px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px ;
+}
+
+nav ul li a{
+    color:white ;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.infocontainer{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hello{
+    color: orange;
+    padding-top: 190px;
+    font-size: 120px;
+    padding-left: 280px;
+}
+
+.name{
+    color: orange;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 280px;
+    padding-bottom: 140px;
+}
+
+
+.me{
+    width: 300px;
+    height: 60px;
+    font-size: 50px;
+    text-align: center;
+    background-color:orange;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.paras{
+    padding-top: 80px;
+    width: 700px;
+    font-weight: lighter;
+    color: white;
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 60px;
+    background-color: yellow;
+    border-radius: 20px;
+}
